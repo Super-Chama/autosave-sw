@@ -28,7 +28,7 @@ const sendMessage = (msg) => {
 const registerServiceWorker = () => {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-      .register('/service-worker.js')
+      .register('/autosave-sw/service-worker.js')
       .then((registration) => {
         if (registration.installing || registration.waiting) {
           logMsg('[app]: Service worker registering')
